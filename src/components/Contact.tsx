@@ -23,9 +23,9 @@ const Contact = () => {
               
               <Button 
                 className="w-full bg-tarot-gold hover:bg-tarot-gold/80 text-black text-lg py-6"
-                onClick={() => window.open("https://wa.me/5567984678018", "_blank")}
+                onClick={() => window.open("https://wa.me/5567981162674", "_blank")}
               >
-                WhatsApp: 67 9 8467 8018
+                WhatsApp: 67 9 8116 2674
               </Button>
               
               <div className="mt-8">
