@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,16 +53,23 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				// Custom colors for GURU TAROT
+				tarot: {
+					purple: '#7E69AB',
+					darkPurple: '#1A1F2C',
+					lightPurple: '#D6BCFA',
+					blue: '#1EAEDB',
+					gold: '#D4AF37',
+				},
+			},
+			fontFamily: {
+				garamond: ['"EB Garamond"', 'serif'],
+			},
+			backgroundImage: {
+				'hero-pattern': "url('/src/assets/tarot-bg.jpg')",
+				'gradient-mystical': 'linear-gradient(90deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%)',
+				'gradient-gold': 'linear-gradient(90deg, #D4AF37 0%, #F2D57E 100%)',
+				'gradient-blue-purple': 'linear-gradient(90deg, #1EAEDB 0%, #7E69AB 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -70,25 +78,27 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'glow': {
+					'0%, 100%': { boxShadow: '0 0 5px #D4AF37, 0 0 10px #D4AF37' },
+					'50%': { boxShadow: '0 0 20px #D4AF37, 0 0 30px #D4AF37' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'glow': 'glow 3s ease-in-out infinite'
 			}
 		}
 	},
