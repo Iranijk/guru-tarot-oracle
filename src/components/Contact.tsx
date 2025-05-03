@@ -73,6 +73,10 @@ const Contact = () => {
               >
                 Visite nosso canal no YouTube
               </a>
+              
+              <p className="mt-4 text-white">
+                Contato: <a href="mailto:gurutarot@mail.com" className="text-tarot-gold hover:text-tarot-gold/80">gurutarot@mail.com</a>
+              </p>
             </div>
           </div>
         </div>
