@@ -20,5 +20,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "./", // This ensures assets are loaded correctly in both local and production environments
+  base: './', // This ensures assets are loaded correctly in both local and production environments
 }));
