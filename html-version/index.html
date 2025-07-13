@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GURU TAROT - O espelho da alma revela os mistérios do destino</title>
+    <meta name="description" content="Descubra as respostas que o Universo preparou para você através da sabedoria milenar do Tarô. Consultas online especializadas." />
+    <meta name="author" content="Guru Tarot" />
+
+    <meta property="og:title" content="GURU TAROT - Consultas de Tarô Online" />
+    <meta property="og:description" content="Descubra as respostas que o Universo preparou para você através da sabedoria milenar do Tarô." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" />
+    
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+                    </svg>
+                    <h1><span class="gradient-text">GURU</span> TAROT</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#about">O Tarô</a>
+                    <a href="#arcanos">Arcanos</a>
+                    <a href="#mission">Nossa Missão</a>
+                    <a href="#services">Serviços</a>
+                    <a href="#contact">Contato</a>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" x2="20" y1="6" y2="6"/>
+                        <line x1="4" x2="20" y1="12" y2="12"/>
+                        <line x1="4" x2="20" y1="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <ul>
+                    <li><a href="#about">O Tarô</a></li>
+                    <li><a href="#arcanos">Arcanos</a></li>
+                    <li><a href="#mission">Nossa Missão</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">GURU TAROT</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                "O espelho da alma revela os mistérios do destino"
+            </p>
+            
+            <div class="hero-description">
+                <p>
+                    Descubra as respostas que o Universo preparou para você através da sabedoria milenar do Tarô.
+                    Nossos especialistas utilizam este oráculo ancestral como um aliado valioso no processo de 
+                    autoanálise e autoconhecimento.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('services')">
+                        Agendar Consulta
+                    </button>
+                    <button class="btn btn-outline" onclick="scrollToSection('about')">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="hero-decoration decoration-1"></div>
+        <div class="hero-decoration decoration-2"></div>
+        <div class="hero-decoration decoration-3"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">O Que é o Tarô?</span>
+            </h2>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="mystical-quote">
+                        <p class="quote-text">
+                            O Tarô é uma ferramenta mágica e ancestral, um conselheiro pessoal para aqueles que buscam 
+                            direcionamento, conselhos ou respostas em todas as áreas de suas vidas. 
+                        </p>
+                        <p class="quote-author">
+                            - Sabedoria Ancestral
+                        </p>
+                    </div>
+                    
+                    <div class="about-text">
+                        <p>
+                            Originado na Europa do século XV, o Tarô transcendeu seu uso como simples jogo de cartas 
+                            para se tornar um poderoso instrumento de introspecção e orientação psicológica. Cada arcano 
+                            maior e menor representa arquétipos universais que dialogam diretamente com nosso inconsciente.
+                        </p>
+                        <p>
+                            Na Guru Tarot, nossa missão é oferecer uma visão ampla e uma nova perspectiva para 
+                            ajudá-lo a alcançar seu potencial máximo, trazendo confiança e segurança na resolução de 
+                            desafios e no entendimento das energias sutis que envolvem sua jornada.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1470813740244-df37b8c1edcb" alt="Cartas de tarô místicas" class="main-image">
+                        <div class="decoration-card card-1"></div>
+                        <div class="decoration-card card-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arcanos Section -->
+    <section id="arcanos" class="arcanos">
+        <div class="container">
+            <h2 class="section-title dark">
+                72 <span class="text-purple">Arcanos</span> de Sabedoria
+            </h2>
+            
+            <div class="arcanos-grid">
+                <!-- Major Arcana -->
+                <div class="arcano-card major">
+                    <div class="arcano-header">
+                        <div class="arcano-number major-number">22</div>
+                        <h3>Os Arcanos Maiores</h3>
+                    </div>
+                    
+                    <p class="arcano-description">
+                        Representam as lições cármicas e os desafios espirituais que enfrentamos em nossa jornada.
+                        São os símbolos mais poderosos do tarô, revelando os grandes movimentos do destino.
+                    </p>
+                    
+                    <div class="arcano-tags">
+                        <span class="tag">O Louco</span>
+                        <span class="tag">O Mago</span>
+                        <span class="tag">A Sacerdotisa</span>
+                        <span class="tag">A Imperatriz</span>
+                        <span class="tag">O Imperador</span>
+                        <span class="tag">+ 17 cartas</span>
+                    </div>
+                    
+                    <div class="arcano-image">
+                        <div class="image-overlay major-overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" alt="Arcanos Maiores">
+                    </div>
+                </div>
+                
+                <!-- Minor Arcana -->
+                <div class="arcano-card minor">
+                    <div class="arcano-header">
+                        <div class="arcano-number minor-number">56</div>
+                        <h3>Os Arcanos Menores</h3>
+                    </div>
+                    
+                    <p class="arcano-description">
+                        Revelam as situações cotidianas e as energias que influenciam nossa vida material.
+                        Divididos em quatro naipes, representam os elementos e aspectos práticos da existência.
+                    </p>
+                    
+                    <div class="arcano-tags minor-tags">
+                        <span class="tag">Copas</span>
+                        <span class="tag">Espadas</span>
+                        <span class="tag">Ouros</span>
+                        <span class="tag">Paus</span>
+                    </div>
+                    
+                    <div class="arcano-image">
+                        <div class="image-overlay minor-overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027" alt="Arcanos Menores">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="mission">
+        <div class="container">
+            <h2 class="section-title dark">
+                Nossa <span class="text-purple">Missão</span>
+            </h2>
+            
+            <div class="mission-quote">
+                <p>
+                    "Como tarólogos, nossa missão é oferecer uma visão ampla e uma nova perspectiva para 
+                    ajudá-lo a alcançar seu potencial máximo."
+                </p>
+            </div>
+            
+            <div class="mission-grid">
+                <div class="mission-content">
+                    <ul class="mission-list">
+                        <li>
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <p>Trabalhando como mediador entre as energias cósmicas e sua essência, traremos confiança e segurança na resolução de desafios e no entendimento das forças que o cercam.</p>
+                        </li>
+                        <li>
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                            </svg>
+                            <p>Cada leitura é uma jornada única de descoberta, onde as cartas revelam mensagens divinas para esclarecer suas dúvidas em diversos aspectos da sua vida.</p>
+                        </li>
+                    </ul>
+                    
+                    <div class="tarot-decks">
+                        <h3>Baralhos Utilizados</h3>
+                        <div class="deck-tags">
+                            <span class="deck-tag">Tarô de Marselha</span>
+                            <span class="deck-tag">Baralho Espanhol</span>
+                            <span class="deck-tag">Tarô Zen de Osho</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mission-cards">
+                    <div class="wisdom-card">
+                        <h3>Sabedoria Cósmica</h3>
+                        <p>
+                            "O Tarô não prevê um destino fixo, mas ilumina o caminho que você está trilhando 
+                            e as energias que o influenciam. O livre-arbítrio sempre prevalece."
+                        </p>
+                        <p class="wisdom-author">- Ensinamentos Esotéricos</p>
+                        <div class="wisdom-decoration decoration-1"></div>
+                        <div class="wisdom-decoration decoration-2"></div>
+                    </div>
+                    
+                    <div class="why-choose-card">
+                        <h3>Por que escolher o Guru Tarot?</h3>
+                        <p>
+                            Nosso diferencial está na interpretação sensível e intuitiva, aliada ao profundo 
+                            conhecimento da simbologia esotérica e psicológica de cada arcano.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">Como Funciona a Leitura</span>
+            </h2>
+            
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Preparação</h3>
+                    <p>Escolha um local tranquilo, sem distrações. Venha com perguntas claras ou mente aberta para receber as orientações que mais necessita.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>A Consulta</h3>
+                    <p>A sessão é realizada via chamada de vídeo pelo WhatsApp. Iniciamos com uma breve mentalização para melhorar a conexão com as cartas.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Interpretação</h3>
+                    <p>Explicamos cada carta e a energia que ela traz para sua situação. Ao final, resumimos os pontos-chave e oferecemos conselhos práticos.</p>
+                </div>
+            </div>
+            
+            <div class="process-quote">
+                <p>
+                    "As cartas são apenas um instrumento. A verdadeira magia está na conexão 
+                    entre o consulente, o tarôlogo e as energias universais que nos cercam."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title dark">
+                Perguntas <span class="text-purple">Frequentes</span>
+            </h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>As cartas online funcionam como pessoalmente?</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutamente. A energia flui independente do meio físico. Importa sua intenção e fé na conexão espiritual que estabelecemos durante a leitura.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Posso fazer perguntas sobre outras pessoas?</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O Tarô trabalha melhor quando focado em você e nas energias que você emana. Podemos analisar como as pessoas ao seu redor interagem com seu campo energético, mas a leitura é sempre sobre você.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Quanto tempo antes devo agendar?</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Recomendamos agendar com pelo menos 24 horas de antecedência para que possamos nos preparar energeticamente para sua leitura.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>E se eu me atrasar?</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Temos tolerância máxima de 5 minutos. Após esse período, será considerado como não comparecimento, conforme nossas políticas.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Posso gravar a consulta?</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim, você pode gravar para revisitar os conselhos posteriormente. Muitos consulentes encontram novas camadas de significado ao revisitar as leituras.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="consultation-topics">
+                <h3>O Que Posso Perguntar?</h3>
+                <p>Nossa consulta abrange todas as áreas da sua vida. Você pode pedir conselhos sobre:</p>
+                
+                <div class="topics-grid">
+                    <div class="topic">Relações amorosas e familiares</div>
+                    <div class="topic">Desafios profissionais</div>
+                    <div class="topic">Situação financeira</div>
+                    <div class="topic">Desenvolvimento pessoal</div>
+                    <div class="topic">Questões espirituais</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title dark">
+                <span class="text-gold">Depoimentos</span>
+            </h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                    </div>
+                    <blockquote>
+                        <p>"A leitura foi incrivelmente precisa sobre situações que eu nem havia mencionado. Me deu a clareza que precisava para tomar uma decisão importante."</p>
+                    </blockquote>
+                    <footer>- Ana Carolina</footer>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                    </div>
+                    <blockquote>
+                        <p>"As recomendações de ervas e práticas energéticas mudaram completamente minha rotina. Nunca me senti tão alinhada."</p>
+                    </blockquote>
+                    <footer>- Rafael Souza</footer>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        <svg class="star" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                    </div>
+                    <blockquote>
+                        <p>"A previsão semestral acertou eventos que eu não poderia imaginar. Recomendo a todos que querem se preparar para o futuro."</p>
+                    </blockquote>
+                    <footer>- Mariana Gomes</footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title dark">
+                Nossos <span class="text-purple">Serviços</span>
+            </h2>
+            
+            <p class="services-description">
+                Serviços personalizados para suas necessidades específicas
+            </p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-content">
+                        <h3>Tarô Semestral</h3>
+                        <div class="service-duration">
+                            <svg class="clock-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                            <span>60 min</span>
+                        </div>
+                        <p>Até uma hora de duração com as previsões para sua vida nos próximos 6 meses</p>
+                        <p class="service-price">R$ 100,00</p>
+                    </div>
+                    <div class="service-footer">
+                        <button class="btn btn-service" onclick="scrollToSection('contact')">Agendar</button>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-content">
+                        <h3>Tarô Mensal</h3>
+                        <div class="service-duration">
+                            <svg class="clock-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                            <span>30 min</span>
+                        </div>
+                        <p>Até 30 minutos de consultas. Previsões para sua vida nos próximos 30 dias</p>
+                        <p class="service-price">R$ 50,00</p>
+                    </div>
+                    <div class="service-footer">
+                        <button class="btn btn-service" onclick="scrollToSection('contact')">Agendar</button>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-content">
+                        <h3>Tarô do Amor</h3>
+                        <div class="service-duration">
+                            <svg class="clock-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                            <span>30 min</span>
+                        </div>
+                        <p>Revelações sobre sua vida amorosa e relacionamentos</p>
+                        <p class="service-price">R$ 50,00</p>
+                    </div>
+                    <div class="service-footer">
+                        <button class="btn btn-service" onclick="scrollToSection('contact')">Agendar</button>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-content">
+                        <h3>Conselho Rápido</h3>
+                        <div class="service-duration">
+                            <svg class="clock-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                            <span>15 min</span>
+                        </div>
+                        <p>Resposta direta a um assunto urgente</p>
+                        <p class="service-price">R$ 20,00</p>
+                    </div>
+                    <div class="service-footer">
+                        <button class="btn btn-service" onclick="scrollToSection('contact')">Agendar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">Agende Sua Consulta</span>
+            </h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Entre em Contato</h3>
+                        <p>Entre em contato pelo WhatsApp para marcar sua consulta personalizada</p>
+                        
+                        <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/5567981162674', '_blank')">
+                            WhatsApp: 67 9 8116 2674
+                        </button>
+                        
+                        <div class="contact-details">
+                            <div class="detail-section">
+                                <h4>Horário de Atendimento</h4>
+                                <p>
+                                    Diariamente das 11h às 22h<br>
+                                    (Confirmação por WhatsApp)
+                                </p>
+                            </div>
+                            
+                            <div class="detail-section">
+                                <h4>Formas de Pagamento</h4>
+                                <p>PIX: gurutarot@mail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-inspiration">
+                    <div class="contact-image">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" alt="Conexão com o místico">
+                    </div>
+                    
+                    <blockquote class="contact-quote">
+                        "O momento perfeito para buscar orientação é sempre agora. 
+                        As energias cósmicas estão constantemente em movimento, trazendo 
+                        novas oportunidades e desafios."
+                    </blockquote>
+                    
+                    <p class="quote-author">- Equipe Guru Tarot</p>
+                    
+                    <div class="contact-links">
+                        <a href="https://www.youtube.com/@GURUXAM%C3%82-BR" target="_blank" rel="noreferrer">
+                            Visite nosso canal no YouTube
+                        </a>
+                        <p>
+                            Contato: <a href="mailto:gurutarot@mail.com">gurutarot@mail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+                    </svg>
+                    <h3><span class="gradient-text">GURU</span> TAROT</h3>
+                </div>
+                
+                <div class="footer-info">
+                    <p>"O espelho da alma revela os mistérios do destino"</p>
+                    <p>&copy; 2024 Guru Tarot. Todos os direitos reservados.</p>
+                </div>
+                
+                <div class="footer-link">
+                    <a href="https://www.youtube.com/@GURUXAM%C3%82-BR" target="_blank" rel="noreferrer">
+                        YouTube
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
